@@ -111,7 +111,7 @@ nav a:hover::after{
     align-items:center;
     gap:80px;
     padding:80px 10%;
-    min-height:80vh;
+    min-height:auto;
 }
 
 .hero-content{
@@ -520,42 +520,53 @@ background:#020617;
 .slide.active{
     display:block;
 }
-@media (max-width: 768px) {
+@media(max-width:768px){
 
-    .hero {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding-top: 100px;
-        gap: 30px;
-    }
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+padding:40px 20px;
+gap:30px;
+}
 
-    .hero-content {
-        width: 90%;
-        margin: auto;
-    }
+.hero-image img{
+width:220px;
+height:220px;
+}
 
-    .hero-image img {
-        width: 250px;
-        height: 250px;
-    }
+.hero-content{
+width:100%;
+}
 
-    .hero h1 {
-        font-size: 2rem;
-    }
+.roles-grid{
+grid-template-columns:1fr;
+}
 
-    .hero p {
-        font-size: 1rem;
-        line-height: 1.7;
-    }
+.hero-buttons{
+justify-content:center;
+}
 
-    nav ul {
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+nav{
+flex-direction:column;
+padding:15px;
+}
 
-    .section {
-        padding: 60px 20px;
-    }
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+.quick-links{
+grid-template-columns:1fr 1fr;
+}
+
+#stats{
+grid-template-columns:1fr 1fr;
+padding:20px;
+}
+
+section{
+padding:50px 20px;
+}
 }
