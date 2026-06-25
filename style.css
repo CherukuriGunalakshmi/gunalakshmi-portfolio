@@ -520,3 +520,42 @@ background:#020617;
 .slide.active{
     display:block;
 }
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px;
+        gap: 30px;
+    }
+
+    .hero-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+}
