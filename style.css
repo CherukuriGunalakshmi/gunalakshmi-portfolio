@@ -131,7 +131,8 @@ nav a:hover::after{
     width:380px;
     height:380px;
     border-radius:50%;
-    object-fit:cover;
+    object-fit:contain;
+    background:#fff;
     border:6px solid #38bdf8;
     box-shadow:0 0 40px #38bdf8;
 }
